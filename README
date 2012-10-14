@@ -1,0 +1,13 @@
+TrinityCore database World of Warcraft 3.3.5 
+
+Looking for developers.
+
+Few things that can have use for devs if anyone knows how to code them:
+Add guids, phasemasks to spawns.
+Add pools and waypoints.
+Add zone maps with quest givers, taxis, etc like wowhead.
+
+Known bugs:
+
+Dropdowns don't works with Spanish locales under ie9.
+Talent calculator works only with few classes.
