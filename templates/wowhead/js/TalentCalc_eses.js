@@ -40,8 +40,8 @@ cO(LANG, {
 	tc_nonegly: "Ninguno",
 	alert_invalidurl: "Enlace no valido.",
 	alert_chooseclass: "Por favor selecciona una clase primero.",
-	alert_choosefamily: "Please choose a pet family first.",
-	alert_buildempty: "Your build is empty.",
-	prompt_importwh: "Please paste the URL of a build made with Wowhead's talent calculator:",
-	prompt_importblizz: "Please paste the URL of a build made with Blizzard's talent calculator:"
+	alert_choosefamily: "Por favor, elige una mascota primero.",
+	alert_buildempty: "Tu build está vacío.",
+	prompt_importwh: "Por favor, pegue la URL de la build hecha con la calculadora de talentos Wowhead:",
+	prompt_importblizz: "Por favor, pegue la URL de la build hecha con la calculadora de talentos de Blizzard:"
 });
