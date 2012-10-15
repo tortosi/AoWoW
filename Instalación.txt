@@ -1,0 +1,6 @@
+--- Manual de instalación para la Web Wh_WotLK (antigua aowow) ---
+
+1- Primero que nada debemos renombrar el fichero: /configs/config.php.in por /configs/config.php
+2- Ahora debemos modificar el archivo: config.php con nuestros datos.
+No olvides que para que te funcione la página debes tener correctamente instaladas las bases de datos auth, characters y word con sus respectivas traducciones del equipo eswow2.
+

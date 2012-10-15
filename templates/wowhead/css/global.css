@@ -269,7 +269,7 @@ a.selected,a.selected:hover {
 	text-align: center;
 	margin-top: 40px;
 	padding-top: 140px;
-	background: url(../images/logo.png) top center no-repeat;
+	/*background: url(../images/logo.png) top center no-repeat;*/
 }
 
 #home input {
