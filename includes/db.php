@@ -9,14 +9,14 @@ require_once('includes/DbSimple/Generic.php');
 global $AoWoWconf;
 
 // Подключение к БД мангос (версия 3 :) )
-$DB = DbSimple_Generic::connect("mysql://".$AoWoWconf['mangos']['user'].":".$AoWoWconf['mangos']['pass']."@".$AoWoWconf['mangos']['host']."/".$AoWoWconf['mangos']['db']);
+$DB = DbSimple_Generic::connect("mysql://".$AoWoWconf['world']['user'].":".$AoWoWconf['world']['pass']."@".$AoWoWconf['world']['host']."/".$AoWoWconf['world']['db']);
 $DB->setErrorHandler('databaseErrorHandler');
-$DB->setIdentPrefix($AoWoWconf['mangos']['aowow']);
+$DB->setIdentPrefix($AoWoWconf['world']['aowow']);
 $DB->query('SET NAMES ?', 'utf8');
-// Подключение к БД realmd
-if($AoWoWconf['realmd'])
+// Подключение к БД auth
+if($AoWoWconf['auth'])
 {
-	$rDB = DbSimple_Generic::connect("mysql://".$AoWoWconf['realmd']['user'].":".$AoWoWconf['realmd']['pass']."@".$AoWoWconf['realmd']['host']."/".$AoWoWconf['realmd']['db']);
+	$rDB = DbSimple_Generic::connect("mysql://".$AoWoWconf['auth']['user'].":".$AoWoWconf['auth']['pass']."@".$AoWoWconf['auth']['host']."/".$AoWoWconf['auth']['db']);
 	$rDB->setErrorHandler('databaseErrorHandler');
 	$rDB->query('SET NAMES ?', 'utf8');
 }

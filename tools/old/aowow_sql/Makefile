@@ -16,8 +16,8 @@ bin/aowow-sql-win32.7z: bin/aowow-sql-win32.exe
 win32: bin/aowow-sql-win32.7z
 import: bin/aowow.sql bin/drop_indexes.sql bin/indexes.sql
 	mysql -u root --password=DsWestb -h 192.168.0.183 --database aowow < bin/aowow.sql
-#	mysql -u root --password=DsWestb -h 192.168.0.183 --database mangos < bin/drop_indexes.sql
-	mysql -u root --password=DsWestb -h 192.168.0.183 --database mangos < bin/indexes.sql
+#	mysql -u root --password=DsWestb -h 192.168.0.183 --database world < bin/drop_indexes.sql
+	mysql -u root --password=DsWestb -h 192.168.0.183 --database world < bin/indexes.sql
 distr: bin/aowow.sql
 	7zr a bin/aowow-sql.7z bin/aowow.sql
 all: win32 distr

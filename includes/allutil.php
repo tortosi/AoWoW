@@ -5,7 +5,7 @@ error_reporting(0);
 ini_set('serialize_precision', 4);
 session_start();
 // Префикс
-$tableprefix = $AoWoWconf['mangos']['aowow'];
+$tableprefix = $AoWoWconf['world']['aowow'];
 
 $locales = array(
 	0 => 'enus',
@@ -497,7 +497,7 @@ function save_cache($type, $type_id, $data, $prefix = '')
 	if(empty($type_str))
 		return;
 
-	$file = $prefix.'cache/mangos/'.$type_str.'_'.$type_id.($cache_types[$type][1] ? '' : '_'.$_SESSION['locale']).'.aww';
+	$file = $prefix.'cache/world/'.$type_str.'_'.$type_id.($cache_types[$type][1] ? '' : '_'.$_SESSION['locale']).'.aww';
 
 	if(!$file)
 		return;
@@ -526,7 +526,7 @@ function load_cache($type, $type_id, $prefix = '')
 	if(empty($type_str))
 		return false;
 
-	$data = @file_get_contents($prefix.'cache/mangos/'.$type_str.'_'.$type_id.($cache_types[$type][1] ? '' : '_'.$_SESSION['locale']).'.aww');
+	$data = @file_get_contents($prefix.'cache/world/'.$type_str.'_'.$type_id.($cache_types[$type][1] ? '' : '_'.$_SESSION['locale']).'.aww');
 	if(!$data)
 		return false;
 
