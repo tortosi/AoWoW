@@ -345,7 +345,7 @@ function GetQuestDBLocale($quest)
     $loc = $_SESSION['locale'];
     $row = $DB->selectRow('
             SELECT
-                Title_loc?d AS Title_loc,
+                Title_loc6 AS Title_loc,
                 Details_loc?d AS Details_loc,
                 Objectives_loc?d AS Objectives_loc,
                 OfferRewardText_loc?d AS OfferRewardText_loc,
@@ -435,7 +435,7 @@ function GetQuestInfo(&$data, $dataflag = QUEST_DATAFLAG_MINIMUM)
         $loc = $_SESSION['locale'];
         $row = $DB->selectRow('
                 SELECT
-                    Title_loc?d AS Title_loc,
+                    Title_loc6 AS Title_loc,
                     Details_loc?d AS Details_loc,
                     Objectives_loc?d AS Objectives_loc,
                     OfferRewardText_loc?d AS OfferRewardText_loc,
