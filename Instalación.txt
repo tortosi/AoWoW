@@ -3,4 +3,9 @@
 1- Primero que nada debemos renombrar el fichero: /configs/config.php.in por /configs/config.php
 2- Ahora debemos modificar el archivo: config.php con nuestros datos.
 No olvides que para que te funcione la página debes tener correctamente instaladas las bases de datos auth, characters y word con sus respectivas traducciones del equipo eswow2.
-
+3- Permisos de escritura en la carpeta cache. Debes dar los permisos '777' en la carpeta cache para que funcione correctamente. En linux el comado es: chmod -R 777 cache
+4- descargamos los archivos necesarios que ya tengo preparados para descargar y no tenéis que generarlos vosotros:
+   * Imágenes: https://github.com/downloads/tortosi/AoWoW/images.7z
+   * Base de datos: https://github.com/downloads/tortosi/AoWoW/aowow.sql.7z
+5- El archivo images lo descomprimimos y lo ubicamos en la carpeta raiz de nuestra web. Si nos pregunta si mezclamos y substituimos los archivos respondemos afirmativamante.
+6- Descomprimimos el archivo de base de datos y lo debemos inyectar en la misma base de datos donde tenemos el world.
