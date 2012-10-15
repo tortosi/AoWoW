@@ -65,7 +65,7 @@ function Mapper(d, e) {
 		this.sZoneLink = c = g_createGlow("zone link");
 		var f = c.childNodes[4];
 		var b = ce("a");
-		b.href = "?zones";
+		b.href = "?maps";
 		ae(b, ct(f.firstChild.nodeValue));
 		de(f.firstChild);
 		ae(f, b);
@@ -268,7 +268,7 @@ Mapper.prototype = {
 			var a = g_zones[b] != null;
 			if (a) {
 				g_setTextNodes(this.sZoneLink, g_zones[b]);
-				this.sZoneLink.childNodes[4].firstChild.href = "?zone=" + b
+				this.sZoneLink.childNodes[4].firstChild.href = "?maps=" + b
 			}
 			this.sZoneLink.style.display = a ? "": "none"
 		}
